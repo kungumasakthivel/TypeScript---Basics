@@ -29,5 +29,9 @@ let someValue: unknown = "Hello";
 let strLength: number = (someValue as string).length
 console.log(strLength)
 
+let sv: unknown = "Hello"
+let sl: number = (<string> sv).length
+console.log(sl)
+
 // anonymous function 
 console.log(() => ("Hello"))
